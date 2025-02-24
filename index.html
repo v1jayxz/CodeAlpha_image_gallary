@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Search images..." onkeyup="filterImages()">
+    </div>
+
+    <div class="gallery">
+        <div class="image-container">
+            <img src="assets/eye.jpeg" alt="Eye">
+            <div class="image-title">Eye</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/handinhand.jpeg" alt="Hand in Hand">
+            <div class="image-title">Hand in Hand</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/jjk.jpeg" alt="Jujutsu Kaisen">
+            <div class="image-title">Jujutsu Kaisen</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/mahadev.jpeg" alt="Mahadev">
+            <div class="image-title">Mahadev</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/MONSTER.jpeg" alt="Monster">
+            <div class="image-title">Monster</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/1a7eb8ce29940c9642a353ea069b2bad.jpg" alt="Abstract">
+            <div class="image-title">Abstract</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/42e4bf6f89e37273941729049b917d54.jpg" alt="Scenery">
+            <div class="image-title">Scenery</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/4536893eab0e6c2c7a3f14d177f4cebf.jpg" alt="Nature">
+            <div class="image-title">Nature</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/4f088e0aa52d15a8e7693cf498c5d860.jpg" alt="City">
+            <div class="image-title">Mahadev</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/510c3aa3a8549632c35ddda438f0491b.jpg" alt="Art">
+            <div class="image-title">Art</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/targeryan.jpg" alt="Art">
+            <div class="image-title">Targeryan</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/concert.jpg" alt="Art">
+            <div class="image-title">Concert</div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+ 
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

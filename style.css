@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+#search-box {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#search-box:focus {
+  border-color: #007bff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px; /* Adjust this value to your desired image width */
+  height: 200px; /* Adjust this value to your desired image height */
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+  object-fit: cover; /* Experiment with 'cover', 'contain', or 'scale-down' */
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.lightbox.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+/* For screens smaller than 1200px (large tablets and smaller desktops) */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* For screens smaller than 992px (tablets) */
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+  }
+}
+
+
+
+
+
